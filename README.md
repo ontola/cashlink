@@ -2,6 +2,8 @@
 
 Service for sending cash to Payment Pointers through sharable links!
 
+Created with help from [this tutorial](https://medium.com/swlh/create-an-api-rest-with-nestjs-1954723e8234).
+
 ## Installation
 
 ```bash
