@@ -13,6 +13,12 @@ $ npm install
 ## Running the app
 
 ```bash
+# copy environment variables
+cp template.env .env
+
+# start postgres database
+docker run -d -p 5444:5432 -e POSTGRES_PASSWORD=dbPassword -e POSTGRES_DB=cashlink postgres
+
 # development
 $ npm run start
 
