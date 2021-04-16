@@ -28,6 +28,7 @@
     "@nestjs/typeorm": "^7.1.5",
     "@uphold/uphold-sdk-javascript": "^2.4.0",
     "class-validator": "^0.13.1",
+    "hbs": "^4.1.1",
     "node-jose": "^2.0.0",
     "pg": "^8.5.1",
     "reflect-metadata": "^0.1.13",

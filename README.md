@@ -27,6 +27,8 @@ $ npm run start:dev
 
 # production mode
 $ npm run start:prod
+
+# then, open http://localhost:3000/token/eyJhbW91bnQiOjEwLCJpZCI6InNvbWVpRCJ9
 ```
 
 ## Test
