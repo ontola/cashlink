@@ -7,10 +7,10 @@
 </head>
 
 <body>
-  Token ID: {{ token.id }} <br />
-  Token Value Amount: {{ token.amount }} <br />
-  Enter your Payment Pointer: <input placeholder="$somepaymentpoiner">
   <form method="post">
+    Token ID: {{ token.id }} <br />
+    Token Value Amount: {{ token.amount }} <br />
+    Enter your Payment Pointer: <input name="pointer" placeholder="$somepaymentpoiner">
     <button type="submit">Submit</button>
   </form>
 </body>

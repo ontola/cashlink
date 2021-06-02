@@ -15,5 +15,6 @@
   "eslint.quiet": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
-  }
+  },
+  "debug.javascript.unmapMissingSources": true
 }

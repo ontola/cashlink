@@ -17,12 +17,12 @@ export class TokenController {
 
   @Get(':token')
   @Render('token')
-  getToken(@Param() params) {
+  async getToken(@Param() params) {
     const tokenEncrypted = params.token;
     // return res.render('token', {
     //   message: 'Hello world!',
     // });
-    const token = this.tokenService.decrypt(tokenEncrypted);
+    const token = await this.tokenService.decrypt(tokenEncrypted);
     // const token = this.tokenService.decrypt(tokenEncrypted);
     return {
       token,
@@ -32,11 +32,19 @@ export class TokenController {
 
   @Post(':token')
   @Render('done')
-  postToken(@Param() params, @Body() paymentRequest: PaymentRequest) {
+  async postToken(@Param() params, @Body() paymentRequest: PaymentRequest) {
     const tokenEncrypted = params.token;
-    const token = this.tokenService.decrypt(tokenEncrypted);
+    const token = await this.tokenService.decrypt(tokenEncrypted);
     // TODO: Save token to DB with timestamp, prevent re-use, send money
+    // send payment
+    const payed = await this.tokenService.pay(
+      token.amount,
+      paymentRequest.pointer,
+    );
+    console.log('payed', payed);
+    // save to DB
     return {
+      pointer: paymentRequest.pointer,
       token,
       validity: true,
     };

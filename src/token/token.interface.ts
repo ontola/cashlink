@@ -4,5 +4,5 @@ export interface Token {
 }
 
 export interface PaymentRequest extends Token {
-  paymentPointer: string;
+  pointer: string;
 }
