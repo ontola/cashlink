@@ -32,17 +32,17 @@ export class TokenService {
       this.keystore.add(newKey);
       const jsonKey = this.key.toJSON(true);
       console.log('new Key:', jsonKey);
-
-      await this.initUphold();
-
       const exampleToken: Token = {
-        amount: 1,
+        amount: 1125412,
         id: 'yolo',
       };
       const encryptedToken = await this.encrypt(exampleToken);
       const decryptedToken = await this.decrypt(encryptedToken);
       assert(JSON.stringify(exampleToken) == JSON.stringify(decryptedToken));
-      console.log(`open http://localhost:3000/token/${encryptedToken}`);
+      console.log(
+        `===== open this link in your browser!! ===== \n http://localhost:3000/token/${encryptedToken}`,
+      );
+      await this.initUphold();
     })();
   }
 

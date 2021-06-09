@@ -4,15 +4,25 @@
 <head>
   <meta charset="utf-8" />
   <title>Cash-Link Token</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <form method="post">
-    Token ID: {{ token.id }} <br />
-    Token Value Amount: {{ token.amount }} <br />
-    Enter your Payment Pointer: <input name="pointer" placeholder="$somepaymentpoiner">
-    <button type="submit">Submit</button>
-  </form>
+  <div class="card">
+    <div class="card-header">
+      <b>Nice!</b> This cash-link is worth <b>€{{ token.amount }}</b><br />
+    </div>
+    <form class="card-form" method="post">
+      <label>What is your Payment Pointer address?</label>
+      <div class="card-input-wrapper">
+        <input name="pointer" placeholder="$somepaymentpoiner">
+        <button type="submit">pay me</button>
+      </div>
+    </form>
+  </div>
+  <img class="logo" src="/logo.svg" />
 </body>
 
 </html>

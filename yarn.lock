@@ -590,7 +590,7 @@
     "webpack" "5.11.0"
     "webpack-node-externals" "2.5.2"
 
-"@nestjs/common@^6.10.0 || ^7.0.0", "@nestjs/common@^6.7.0 || ^7.0.0", "@nestjs/common@^7.0.0", "@nestjs/common@^7.6.13":
+"@nestjs/common@^6.0.0 || ^7.0.0", "@nestjs/common@^6.10.0 || ^7.0.0", "@nestjs/common@^6.7.0 || ^7.0.0", "@nestjs/common@^7.0.0", "@nestjs/common@^7.6.13":
   "integrity" "sha512-XJrGoGttCsIOvG2+EXl09pl9iCmYXnhPjx3ndPPigMRdXQGLVpF38OdzroWTD7aYU5rHo3Co21G9cYl8aqdt2Q=="
   "resolved" "https://registry.yarnpkg.com/@nestjs/common/-/common-7.6.14.tgz"
   "version" "7.6.14"
@@ -612,7 +612,7 @@
     "lodash.set" "4.3.2"
     "uuid" "8.3.2"
 
-"@nestjs/core@^6.7.0 || ^7.0.0", "@nestjs/core@^7.0.0", "@nestjs/core@^7.6.13":
+"@nestjs/core@^6.0.0 || ^7.0.0", "@nestjs/core@^6.7.0 || ^7.0.0", "@nestjs/core@^7.0.0", "@nestjs/core@^7.6.13":
   "integrity" "sha512-iAeQIsC79xcLTpga3he48ROX4g561VFsfbksicqotrFy0k9czKxVtHxevsnwo8KzFsYXQqOCO6XYI8MsuAjMcg=="
   "resolved" "https://registry.yarnpkg.com/@nestjs/core/-/core-7.6.14.tgz"
   "version" "7.6.14"
@@ -646,6 +646,13 @@
     "fs-extra" "9.1.0"
     "jsonc-parser" "3.0.0"
     "pluralize" "8.0.0"
+
+"@nestjs/serve-static@^2.1.4":
+  "integrity" "sha512-w2PpLKzQOB8rJ+vMOy28xm8jwE8VjJfA9U+KOm0H0OY62g2oOWJ+OQPSDogP7XxAzZwq+Bt8wNU2oS8+z6v6Zg=="
+  "resolved" "https://registry.npmjs.org/@nestjs/serve-static/-/serve-static-2.1.4.tgz"
+  "version" "2.1.4"
+  dependencies:
+    "path-to-regexp" "0.1.7"
 
 "@nestjs/testing@^7.6.13":
   "integrity" "sha512-sHOPsmzCPQUlQtfpH5WK+eILk8lRMdr/k3MrkuprS9Y1O4wmPt81ohspvsCXxLQ4U65i6cYR9y/C2uefvnx4rg=="
